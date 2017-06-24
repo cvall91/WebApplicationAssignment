@@ -1,0 +1,46 @@
+﻿/**
+ * Name: Carlos Valle
+ * Panther Id: 3004204
+ * Assignment: Homework 2
+ * Class: COP 4813 
+ * Semester: Summer B 2016
+ * 
+ * I attest that this is my original work 
+ * - Carlos Valle
+ */
+
+* {
+    font: arial;
+    color: #000066;
+    background-color: #efeff5;
+}
+
+section#Welcome{
+    font-style: italic;
+    background-color: white;
+    border: solid;
+    border-width: 1px;
+}
+
+section#Welcome span.Highlight {
+    font-weight: bold;
+    font-style: normal;
+}
+
+img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 542px;
+}
+
+.ErrorLabel {
+    color: red;
+    font-weight: bold;
+}
+
+section#MainContent
+{
+  width: 1211px;
+  float: left;
+}

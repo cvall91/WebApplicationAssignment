@@ -1,0 +1,50 @@
+﻿<!--/**
+ * Name: Carlos Valle
+ * Panther Id: 3004204
+ * Assignment: Homework 2
+ * Class: COP 4813 
+ * Semester: Summer B 2016
+ * 
+ * I attest that this is my original work 
+ * - Carlos Valle
+ */-->
+
+<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPage.master.cs" Inherits="MasterPages_MasterPage" %>
+<link href="~/Styles/DangerZone.css" rel="stylesheet" />
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+
+</head>
+<body>
+    <form id="form1" runat="server">
+    <asp:ScriptManager ID="ScriptManger1" runat="Server">
+        <Services>
+            <asp:ServiceReference Path="/DangerZone2.svc" />
+        </Services>
+    </asp:ScriptManager>
+    <div id="PageWrapper">
+        <header><a href="/"><img src="/Images/t.png" alt="Danger Zone logo"></a></header>
+
+        <nav><asp:Menu ID="Menu1" runat="server" DataSourceID="SiteMapDataSource1" >
+            <DynamicMenuItemStyle BackColor="#999999" />
+            </asp:Menu>
+            <asp:SiteMapDataSource ID="SiteMapDataSource1" runat="server" />
+        </nav>
+
+        <section id="MainContent">
+            <asp:ContentPlaceHolder ID="cpMainContent" runat="server">
+            </asp:ContentPlaceHolder>
+        </section>
+
+        <aside id="Sidebar"></aside>
+
+    </div>
+    </form>
+</body>
+</html>
